@@ -163,3 +163,11 @@ hr {
     width: 80%;
     border: solid 1px black;
 }
+/* Mise en page de la section des progrès */
+.cadreGris{
+    background-color: lightgray;
+}
+.cadreGris img{
+    width: 45vh;
+    height: 50vh;
+}
