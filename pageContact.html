@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styleContact.css">
 </head>
 <body>
-    
+     <!-- Barre laterale -->
+     <header>
+        <section class="barrelaterale">
+            <div class="logoNoir"> 
+                <img src="images/FitPackNoir.png" alt="logo FitPack sur fond noir">
+            </div>
+            <div class="boxfb">
+                <a href="https://www.facebook.com/francois.pichereau.3" target="_blank"><img class="logo" src="./images/FB1Noir.jpg">
+                </a>
+            </div>
+            <div class="boxIns">
+                <a href="https://www.instagram.com/francoispichereau?igsh=MWc2YnRqeGttcGNmMQ==" target="_blank"><img class="logo" src="./images/InstaNoir.jpg" alt="logo instagram">
+                </a>
+            </div>  
+            <div class="boxA"> 
+                <p> Acceuil </p>
+            </div>
+          
+            <div class="boxCont">
+                <p>Se connecter / S'inscrire</p>  
+            </div>  
+        </section>
+    </header>  
+
+
+   <p> Contactez-moi</p>
+
+    <section class="cadreContact"> 
+
+        <label for="Nom"> 
+            Nom
+        </label><br>
+        <input class="caseForm" type="text" id="Nom"><br>
+        <div class="error" id="nom_error"></div>
+
+        <label for="Email"> 
+            Email 
+        </label><br>
+        <input class="caseForm" type="text" id="Email"><br>
+        <div class="error" id="email_error"></div>
+
+        <label for="Sujet"> 
+            Sujet
+        </label><br>
+        <input class="caseForm" type="text" id="sujet">
+        <br>
+
+        <label for="message"> 
+            Message 
+        </label><br>
+        <input class="caseMess" type="text" id="message"><br>
+        <div class="error" id="message_error"></div>
+
+        <button class="btnVert" id="envoyer"> 
+            ➣ Envoyer 
+        </button>
+    </section>
+
+
+
+
 </body>
 </html>
