@@ -1,0 +1,92 @@
+/* Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* CSS pour le bandeau horizontale contenant les reseaux sociaux */
+.barrelaterale{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    background-color: black;
+    color: white;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+}
+.logoNoir img{
+    width: 25vh;
+    height: 15vh;
+}
+.boxfb{
+    grid-column-start: 8;
+    grid-row-start: 1;
+    align-self: center;
+}
+.boxIns{
+    grid-column-start: 9;
+    grid-row-start: 1;
+    align-self: center;
+}
+.boxA{
+    grid-column-start: 10;
+    grid-row-start: 1;
+    align-self: center;
+}
+.boxA:hover{
+    text-decoration: underline;
+}
+.boxCont{
+    grid-column: span 2 / span 2;
+    grid-column-start: 11;
+    grid-row-start: 1;
+    align-self: center;
+    cursor: pointer;
+}
+.boxCont:hover{
+    text-decoration: underline;
+}
+/* Mise en page de la section contact avec form */
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 800;
+
+}
+.cadreContact{
+    margin: 180px;
+    border: solid 1px lightgrey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: -3px 22px 15px 13px rgba(0,0,0,0.11);
+}
+.caseForm{
+    border: solid 1px grey;
+    border-radius: 5px;
+    height: 40px;  
+}
+.caseMess{
+    border: solid 1px grey;
+    border-radius: 5px;
+    height: 100px;
+}
+select{
+    border-radius: 5px;
+    height: 40px; 
+}
+.btnVert{
+    color:white;
+    background-color: black;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.error{
+    color: red;
+}
