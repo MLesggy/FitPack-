@@ -34,39 +34,41 @@
 
    <p> Contactez-moi</p>
 
-    <section class="cadreContact"> 
-
+    <section > 
+    <form id="contact-form" action="https://formspree.io/f/xblgrkae" method="post" class="cadreContact">
         <label for="Nom"> 
             Nom
         </label><br>
-        <input class="caseForm" type="text" id="Nom"><br>
+        <input class="caseForm" type="text" id="Nom" name="Nom"><br>
         <div class="error" id="nom_error"></div>
 
         <label for="Email"> 
             Email 
         </label><br>
-        <input class="caseForm" type="text" id="Email"><br>
+        <input class="caseForm" type="text" id="Email" name="Email"><br>
         <div class="error" id="email_error"></div>
 
         <label for="Sujet"> 
             Sujet
         </label><br>
-        <input class="caseForm" type="text" id="sujet">
+        <input class="caseForm" type="text" id="sujet" name="Sujet">
+        <div class="error" id="sujet_error"></div>
         <br>
 
         <label for="message"> 
             Message 
         </label><br>
-        <input class="caseMess" type="text" id="message"><br>
+        <textarea class="caseMess"  id="message" name="Message" row="5"></textarea><br>
         <div class="error" id="message_error"></div>
 
-        <button class="btnVert" id="envoyer"> 
+        <button type="button" class="btnNoir" id="envoyer"> 
             ➣ Envoyer 
         </button>
+    </form>
     </section>
 
 
-
+<script src="scriptContact.js"></script>
 
 </body>
 </html>
